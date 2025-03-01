@@ -32,6 +32,27 @@ class Main {
     System.out.println("Exiting the program...");
     break;
    }
+
+   switch (choice) {
+    case 1: // Add Student
+     System.out.print("Enter Name: ");
+     String name = scan.nextLine();
+     System.out.print("Enter PRN: ");
+     long prn = Long.parseLong(scan.nextLine());
+     System.out.print("Enter Branch: ");
+     String branch = scan.nextLine();
+     System.out.print("Enter Batch: ");
+     String batch = scan.nextLine();
+     System.out.print("Enter CGPA: ");
+     double cgpa = Double.parseDouble(scan.nextLine());
+
+     Student student = new Student(name, prn, branch, batch, cgpa);
+     operations.addStudents(student);
+     break;
+
+    default:
+     System.out.println("Invalid choice! Please enter a valid option.");
+   }
   }
   scan.close();
  }
