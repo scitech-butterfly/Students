@@ -18,8 +18,6 @@ The program allows users to **add, display, search, update, and delete students*
 git clone https://github.com/scitech-butterfly/Students.git
 <li>Navigate to project folder</li>
 <li>Compile and Run the Java Program</li></ol>
-javac Main.java
-java Main
 
 ## Metods and Functionalities
 <ol><li>Student.java (Defines Student Class)</li>
