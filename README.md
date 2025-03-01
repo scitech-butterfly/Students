@@ -25,7 +25,7 @@ java Main
 <li><ol>1️. Student.java (Defines Student Class)</ol>
 <p>This class represents a Student with attributes such as name, PRN, branch, batch, and CGPA. It includes getters, setters, and a method to display student details.</p>
 
-<h5>Method	Description</h5>
+<b>Method Description<b>
 <li>
     <ol>Student(String name, long prn, String branch, String batch, double cgpa) Constructor to initialize student details</ol>
     <ol>String getName() Returns the student's name</ol>
@@ -43,15 +43,14 @@ java Main
 
 <ol>2️. StudentOperations.java (CRUD Operations)</ol>
 <p>This class manages student records using an ArrayList and provides methods to add, display, search, update, and delete students.</p>
-
-<ol>Method Description</ol>
+<li><b>Method Description<b>
 <ol>void addStudent(Student student) Adds a new student to the list</ol>
 <ol>void displayStudents() Displays all students in the list</ol>
 <ol>Student searchByPRN(long prn) Searches for a student by PRN and returns the student object</ol>
 <ol>Student searchByName(String name) Searches for a student by name and returns the student object</ol>
 <ol>Student searchByPosition(int position) Searches for a student at a given position (index) in the list</ol>
 <ol>boolean updateStudent(long prn, String name, String branch, String batch, double cgpa) Updates student details by PRN</ol>
-<ol>boolean deleteStudent(long prn) Deletes a student from the list based on PRN</ol>
+<ol>boolean deleteStudent(long prn) Deletes a student from the list based on PRN</ol></li>
 
 
 <ol>3️. Main.java (Menu-Driven Program)</ol></li>
