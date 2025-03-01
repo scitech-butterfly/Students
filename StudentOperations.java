@@ -1,62 +1,18 @@
 // StudentOperations.java
 
-class Student {
- private String name;
- private long prn;
- private String branch;
- private String batch;
- private double cgpa;
+import java.util.*;
 
- public Student(String name, long prn, String branch, String batch, double cgpa) {
-  this.name = name;
-  this.prn = prn;
-  this.branch = branch;
-  this.batch = batch;
-  this.cgpa = cgpa;
+class StudentOperations {
+ ArrayList<Student> students; // array list of data type Student (object) which is a combination of String and
+                              // int
+
+ public StudentOperations() {
+  this.students = new ArrayList<>();
  }
 
- public String getName() {
-  return name;
- }
-
- public void setName(String name) {
-  this.name = name;
- }
-
- public long getPRN() {
-  return prn;
- }
-
- public void setPRN(long prn) {
-  this.prn = prn;
- }
-
- public String getBranch() {
-  return branch;
- }
-
- public void setBranch(String branch) {
-  this.branch = branch;
- }
-
- public String getBatch() {
-  return batch;
- }
-
- public void setBatch(String batch) {
-  this.batch = batch;
- }
-
- public double getCGPA() {
-  return cgpa;
- }
-
- public void setCGPA(double cgpa) {
-  this.cgpa = cgpa;
- }
-
- public void display() {
-  System.out
-    .println("Student Name: " + name + " PRN: " + prn + " Branch: " + branch + " Batch: " + batch + " CGPA: " + cgpa);
+ // Method to add students to the ArrayList
+ public void addStudents(Student student) {
+  students.add(student);
+  System.out.println("Student added.");
  }
 }
