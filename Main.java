@@ -50,6 +50,41 @@ class Main {
      operations.addStudents(student);
      break;
 
+    case 2: // Display Students
+     operations.displayStudents();
+     break;
+
+    case 3: // Search Student by PRN
+     System.out.print("Enter PRN to search: ");
+     prn = Long.parseLong(scan.nextLine());
+     Student foundByPrn = operations.searchByPRN(prn);
+     if (foundByPrn != null) {
+      foundByPrn.display();
+     } else {
+      System.out.println("Student not found.");
+     }
+     break;
+
+    case 4: // Search Student by Name
+     System.out.print("Enter Name to search: ");
+     name = scan.nextLine();
+     Student foundByName = operations.searchByName(name);
+     if (foundByName != null) {
+      foundByName.display();
+     } else {
+      System.out.println("Student not found.");
+     }
+     break;
+
+    case 5: // Search Student by Position
+     System.out.print("Enter position (index starts from 0): ");
+     int position = Integer.parseInt(scan.nextLine());
+     Student foundByPosition = operations.searchByPosition(position);
+     if (foundByPosition != null) {
+      foundByPosition.display();
+     }
+     break;
+
     default:
      System.out.println("Invalid choice! Please enter a valid option.");
    }
