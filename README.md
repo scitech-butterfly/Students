@@ -15,7 +15,7 @@ The program allows users to **add, display, search, update, and delete students*
 
 ## How to Run 
 <ol> <li> Clone this repository </li>
-git clone https://github.com/yourusername/Student-Management-Java.git
+git clone https://github.com/scitech-butterfly/Students.git
 <li>Navigate to project folder</li>
 <li>Compile and Run the Java Program</li></ol>
 javac Main.java
