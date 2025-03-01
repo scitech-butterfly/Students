@@ -13,20 +13,20 @@ The program allows users to **add, display, search, update, and delete students*
 **Menu-driven using switch-case**  
 
 
-## How to Run  
-**Clone this repository**  
+## How to Run 
+<li> <ol> Clone this repository </ol>
 git clone https://github.com/yourusername/Student-Management-Java.git
-**Navigate to project folder**
-**Compile and Run the Java Program**
+<ol>Navigate to project folder</ol>
+<ol>Compile and Run the Java Program</ol></li>
 javac Main.java
 java Main
 
 ## Metods and Functionalities
-1️. Student.java (Defines Student Class)
-This class represents a Student with attributes such as name, PRN, branch, batch, and CGPA. It includes getters, setters, and a method to display student details.
+<li><ol>1️. Student.java (Defines Student Class)</ol>
+<p>This class represents a Student with attributes such as name, PRN, branch, batch, and CGPA. It includes getters, setters, and a method to display student details.</p>
 
-Method	Description
-Student(String name, long prn, String branch, String batch, double cgpa)	Constructor to initialize student details
+<h5>Method	Description</h5>
+<li> <ol>Student(String name, long prn, String branch, String batch, double cgpa)	Constructor to initialize student details</ol>
 String getName()	Returns the student's name
 void setName(String name)	Updates the student's name
 long getPRN()	Returns the student's PRN
@@ -37,10 +37,10 @@ String getBatch()	Returns the student's batch
 void setBatch(String batch)	Updates the student's batch
 double getCGPA()	Returns the student's CGPA
 void setCGPA(double cgpa)	Updates the student's CGPA
-void display()	Displays student details
+void display()	Displays student details </li>
 
-2️. StudentOperations.java (CRUD Operations)
-This class manages student records using an ArrayList and provides methods to add, display, search, update, and delete students.
+<ol>2️. StudentOperations.java (CRUD Operations)</ol>
+<p>This class manages student records using an ArrayList and provides methods to add, display, search, update, and delete students.</p>
 
 Method	Description
 void addStudent(Student student)	Adds a new student to the list
@@ -51,7 +51,7 @@ Student searchByPosition(int position)	Searches for a student at a given positio
 boolean updateStudent(long prn, String name, String branch, String batch, double cgpa)	Updates student details by PRN
 boolean deleteStudent(long prn)	Deletes a student from the list based on PRN
 
-3️. Main.java (Menu-Driven Program)
-This class serves as the entry point for the program, displaying a menu for users to interact with. It calls methods from StudentOperations.java based on user input.
+<ol>3️. Main.java (Menu-Driven Program)</ol></li>
+<p>This class serves as the entry point for the program, displaying a menu for users to interact with. It calls methods from StudentOperations.java based on user input.</p>
 
 
