@@ -63,5 +63,4 @@ class Student {
     .println(
       "Student Name: " + name + "\nPRN: " + prn + "\nBranch: " + branch + "\nBatch: " + batch + "\nCGPA: " + cgpa);
  }
-
 }
