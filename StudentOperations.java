@@ -42,4 +42,14 @@ class StudentOperations {
   }
   return null;
  }
+
+ // Search Student by Position (Index)
+ public Student searchByPosition(int position) {
+  if (position >= 0 && position < students.size()) {
+   return students.get(position); // Get the student at the given index
+  } else {
+   System.out.println("Invalid position! Please enter a valid index.");
+   return null; // Return null if the position is out of bounds
+  }
+ }
 }
