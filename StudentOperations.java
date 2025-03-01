@@ -18,6 +18,10 @@ class StudentOperations {
 
  // Method to Display Student Details
  public void displayStudents() {
+  if (students.isEmpty()) {
+   System.out.println("No students found.");
+   return;
+  }
   for (Student student : students) {
    student.display();
   }
