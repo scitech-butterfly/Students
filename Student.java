@@ -57,6 +57,7 @@ class Student {
   this.cgpa = cgpa;
  }
 
+ // Method to Display Student Details
  public void display() {
   System.out
     .println(
